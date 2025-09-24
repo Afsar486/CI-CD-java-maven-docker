@@ -11,7 +11,8 @@ node {
     
     stage('Clone Repo') { // for display purposes
       // Get some code from a GitHub repository
-         git 'https://github.com/Afsar486/CI-CD-java-maven-docker.git'
+         git branch: 'main',
+            url: 'https://github.com/Afsar486/CI-CD-java-maven-docker.git'
       // Get the Maven tool.
       // ** NOTE: This 'maven-3.5.2' Maven tool must be configured
       // **       in the global configuration.           
